@@ -1,0 +1,91 @@
+*{
+  background-color: #edf2fc;
+  /* color: #edf2fc; */
+
+}
+body{
+  height: 80vh;
+}
+  .alert-danger { color: #55151b }
+  #pageContent {
+    display: none;
+    min-height: 100vh;
+    position: relative;
+  }
+  #footer {
+    z-index: 5;
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    background-color: #fff;
+  }
+  #loader{
+    display: flex; align-items: center; justify-content: center;
+    position: fixed; top: 0; left: 0; z-index: 999;
+    background: rgba(0,0,0, 0.9);
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+  }
+  #loaderCircle {
+    width: 80px; height: 80px;
+    box-sizing: border-box;
+    border: 10px solid #f3f3f3; border-radius: 50%; border-top: 10px solid rgb(254,0,0); border-left: 10px solid rgb(254,0,0); ;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes animatebottom {
+    from{ bottom:-20vh; opacity:0 }
+    to{ bottom:0; opacity:1 }
+  }
+
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animatebottom;
+    animation-duration: 0.6s
+  }
+.heading{
+  background-color: #ff4321;
+  padding: 20px 0;
+  margin-top: 40px;
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: #edf2fc;
+}
+.text{
+  width: 80%;
+  margin: 0 auto;
+  height: 110%;
+}
+.signin-button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 10%;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  background-color: #ff4321;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+.signin-button:hover{
+  background-color: rgb(255, 67, 33,0.8);
+}
+.signin-button:active{
+  background-color: #88ef9e;
+}

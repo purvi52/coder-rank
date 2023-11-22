@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/joinTestQ.css">
+  </head>
+  <body>
+    <span class="logo"><i class="fa-solid fa-code"></i></span>
+    <h1 class="CR">Coder-Ranks</h1>
+    <ul class="akash">
+    <form class="" action="/joinTestQ" method="post">
+      <!-- <% movl.forEach(movie=>{%>
+        <p><%= movie.question %></p>
+        <button type="submit" value=<%= movie.question %> name="button">Test</button>
+      <% }) %> -->
+
+      <% for(var i=0; i < movl.length; i++) { %>
+        <li>
+        <span class="number"><%= i+1 %>.</span>
+        <span class="name"><%= movl[i].question %></span>
+        <span class="points"></span>
+        <button type="submit" value=<%= i %> name="button" class="badge">Test</button>
+        </li>
+         <% } %>
+
+
+
+
+
+
+    </form>
+</ul>
+  </body>
+</html>

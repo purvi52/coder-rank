@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Start of Async Drift Code -->
+  <script>
+  "use strict";
+
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('imfm2kcc6h24');
+  </script>
+  <!-- End of Async Drift Code -->
+  </head>
+
+  <style media="screen">
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    body {
+      background: #edf2fc;
+      font-size: 14px;
+    }
+
+    .l {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      padding-bottom: 5px;
+    }
+
+    .logo {
+      color: #ff4321;
+      width: 100px;
+      cursor: pointer;
+      font-size: 50px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .CR {
+      color: #ff4321;
+      font-size: 30px;
+      font-family: sans-serif;
+      position: absolute;
+      top: 30px;
+      left: 222px;
+
+    }
+
+    .container {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .contact-box {
+      background: #fff;
+      display: flex;
+      width: 80%;
+      text-align: center;
+      margin: 5% auto 0 auto;
+
+    }
+
+    .contact-left {
+      flex-basis: 60%;
+      padding: 40px 60px;
+      border: solid 1px black;
+      border-right: none;
+    }
+
+    .contact-right {
+      flex-basis: 40%;
+      padding: 40px;
+      background: #ff4321;
+      color: #fff;
+
+    }
+
+    .container h1 {
+      margin-bottom: 10px;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    .input-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .input-row .input-group {
+      flex-basis: 45%;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+      padding-bottom: 5px;
+    }
+
+    textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      outline: none;
+      padding-top: 10px;
+      box-sizing: border-box;
+
+    }
+
+    textarea::-webkit-input-placeholder {
+      font-size: 15px;
+      text-align: center;
+      padding-top: 3px;
+      transform: translateX(-5%);
+    }
+
+    label {
+      padding-top: 10px;
+      font-size: 18.32px;
+      margin-bottom: 6px;
+      display: block;
+      color: #ff4321;
+
+    }
+
+    button {
+      background: #ff4321;
+      width: 100px;
+      border: none;
+      outline: none;
+      color: #fff;
+      height: 35px;
+      border-radius: 30px;
+      margin-top: 20px;
+      box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    }
+
+    .contact-left h3 {
+      color: #ff4321;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .contact-right h3 {
+
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    tr td:first-child {
+      padding-right: 20px;
+
+    }
+
+    tr td {
+      padding-right: 20px;
+
+    }
+
+    .examDetails {
+      color: #ff4321;
+    }
+
+    .ques {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      background-color: #fff;
+      border: 1px solid black;
+
+    }
+
+    .language {
+      position: relative;
+      left: 120px;
+      top: 20px;
+    }
+
+    .compileinput {
+      position: relative;
+      left: -140px;
+
+    }
+
+    .first {
+      position: relative;
+      right: 50px;
+      top: 0px;
+      height: 40px;
+      width: 100px;
+    }
+
+    .second {
+      position: relative;
+      left: 50px;
+      top: 0px;
+      height: 40px;
+      width: 100px;
+    }
+
+    .timer {
+      position: absolute;
+      top: 30px;
+      left: 1250px;
+      font-size: 40px;
+    }
+
+  .yes{
+    position: relative;
+    left: 80px;
+    bottom: 14px;
+  }
+  .yes1{
+    position: relative;
+    left: 100px;
+    bottom: 31px;
+  }
+  .no{
+    position: relative;
+    left: 130px;
+    bottom: 47px;
+  }
+  .no1{
+    position: relative;
+    left: 150px;
+    bottom: 64px;
+  }
+  .compileWithInput{
+    position: relative;
+    bottom: 1px;
+  }
+  .output{
+    position:  relative;
+    left: 143px;
+    bottom: 40px;
+  }
+
+  </style>
+  <!-- <body>
+    <div class="l">
+      <span class="logo"><i class="fa-solid fa-code"></i></span>
+      <h1 class="CR">Coder-Ranks</h1>
+    </div>
+    <div class="ques">
+      <p>This is the question?</p>
+    </div>
+    <div class="contact-box">
+      <div class="contact-left">
+        <form id="myform" name="myform" action="/" method="post">
+          <h3>Code here</h3>
+          <textarea name="code" id="code" rows="23" cols="100" placeholder="
+            //Code, Compile, Run
+           //Write your code in this editor and press Run button to compile and execute it.
+
+  "><%= studentCode%></textarea>
+          </div>
+      <div class="contact-right">
+        <h3>Input</h3>
+        <textarea name="input" id="input" rows="8" cols="100" placeholder="
+          //custom inputs"></textarea>
+          <div class="language">
+            Language: <select name="lang">
+              <option value="C">C</option>
+              <option value="Java">Java</option>
+              <option value="Python" selected>Python</option>
+            </select>
+          </div>
+          <div class="compileinput">
+            Compile With Input:
+            <input type="radio" name="inputRadio" id="inputRadio" value="true"/>yes
+            <input type="radio" name="inputRadio" id="inputRadio" value="false" checked/>No
+            <br>
+          </div>
+          <input type="submit" name="submit" value="submit">
+      </div>
+
+</form>
+    </div>
+      <div class="o/p">
+        <h1><%= output %></h1>
+      </div>
+  </body>
+</html> -->
+<body>
+  <div class="timer">
+    <p id="countdown"><%= timelimit %></p>
+    <script src="script.js">
+
+    </script>
+  </div>
+
+  <div class="l">
+    <span class="logo"><i class="fa-solid fa-code"></i></span>
+    <h1 class="CR">Coder-Ranks</h1>
+  </div>
+  <div class="ques">
+    <p>This is the question?</p>
+  </div>
+  <div class="contact-box">
+    <div class="contact-left">
+      <form id="myform" name="myform" action="/compiler" method="post">
+        <h3>Code here</h3>
+        <textarea name="code" id="code" rows="23" cols="100" placeholder="
+            //Code, Compile, Run
+           //Write your code in this editor and press Run button to compile and execute it.
+
+  "><%= studentCode%></textarea>
+    </div>
+    <div class="contact-right">
+      <h3>Input</h3>
+      <textarea name="input" id="input" rows="3" cols="100" placeholder="      custom inputs..."></textarea>
+      
+      <div class="language">
+        Language: <select name="lang">
+          <option value="C">C</option>
+          <option value="Java">Java</option>
+          <option value="Python" selected>Python</option>
+        </select>
+      </div>
+      <div class="compileinput">
+        <span class="compileWithInput"></span>Compile With Input:
+          <input type="radio" name="inputRadio" class="yes" value="true" /><span class="yes1">Yes</span>
+          <input type="radio" name="inputRadio" class="no" value="false" checked /><span class="no1">No</span>
+
+
+
+        <br>
+        <div class="output">
+          <h3>Output</h3>
+          <textarea name="input" id="output" rows="12" cols="100" placeholder="      //output of your code">   <%= output %>
+            </textarea>
+            <h3>Expected Output</h3>
+          <textarea name="input" id="expected" rows="12" cols="100" placeholder="      //Expected output of your code">   <%= expected %>
+            </textarea>
+        </div>
+
+        <!-- <div class="expected">
+          
+        </div> -->
+
+
+
+      </div>
+      <input class="first" type="submit" name="submit" value="submit">
+      <input class="second" type="submit" name="submit" value="submit">
+    </div>
+
+    </form>
+  </div>
+
+</body>
+
+</html>

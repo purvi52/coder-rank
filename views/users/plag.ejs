@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plagiarism Detector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/image/m2.png" type="image/x-icon">
+	<!-- <script src="/css/bootstrap/jquery.min.js"></script> -->
+	<!-- <script src="/css/bootstrap/popper.min.js"></script> -->
+	<!-- <script src="/css/bootstrap/bootstrap.min.js"></script> -->
+
+	<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/plag.css">
+</head>
+
+<body onload="stopLoader()">
+
+	<!-- Add loader animation -->
+	<div id="loader">
+		<div id="loaderCircle"></div>
+	</div>
+
+	<section id="pageContent" class="animate-bottom">
+
+			<h1 class="text-center mb-3 heading">Check Plagiarism</h1>
+
+			<h5 class="text-center mb-5 ">Enter the text in the space given below and submit.</h5>
+
+				<form method="post" action="/result" >
+					<div class="form-group">
+						<textarea class="form-control text" name="query" type="text" rows="15" placeholder="Enter the text to check plagiarism" required><%= plagCount %></textarea>
+					</div>
+					<button type="submit" class="signin-button" onclick="startLoader()" >Check</button>
+				</form>
+
+
+	</section>
+
+<script type="text/javascript">
+
+	function startLoader(){
+		document.getElementById("loader").style.display = "flex";
+		document.getElementById("pageContent").style.display = "none";
+	}
+
+	function stopLoader(){
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("pageContent").style.display = "block";
+	}
+
+</script>
+
+</body>
+</html>

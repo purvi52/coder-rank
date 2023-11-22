@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS</title>
+    <link rel="stylesheet" href="css/styles0.css">
+</head>
+
+<body>
+  <div class="login-div">
+    <div class="logo">
+      <img src="image/m.png" alt="">
+    </div>
+    <div class="fields">
+     <center>
+       <h1>Login</h1>
+     </center>
+
+      <% if(typeof message!=='undefined'){%>
+          <h4><%= message %></h4>
+          <%
+      } %>
+      <div class="username">
+        <form action="/login" method="post">
+
+            <input type="email" name="email" required placeholder="Enter email">
+            <br><br>
+
+      </div>
+      <div class="username">
+        <input type="password" name="password" required placeholder="Enter Password">
+        <br><br>
+      </div>
+
+          <button class="signin-button" type="submit" value="Login">Login</button>
+
+
+
+      </form>
+      </div>
+
+
+    <a class="anchor" href="/forget">Forget Password</a>
+
+    <a class="anchor" href="/verification">Verification</a>
+
+    <a class="anchor" href="/register">Register</a>
+
+  </div>
+
+
+
+
+</body>
+</html>

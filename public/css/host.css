@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background: #fff; */
+  background:#edf2fc;
+  font-size: 14px;
+}
+.l{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+.logo {
+  color: #ff4321;
+  width: 100px;
+  cursor: pointer;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.CR{
+  color: #ff4321;
+  font-size: 30px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 30px;
+  left: 222px;
+
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.contact-box{
+  background: #fff;
+  display: flex;
+}
+.contact-left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+  border: solid 1px black;
+  border-right: none;
+  padding-bottom: 20px;
+}
+.contact-right{
+  flex-basis: 40%;
+  padding: 40px;
+  background: #ff4321;
+  color: #fff;
+
+}
+
+.container h1{
+   margin-bottom: 10px;
+   text-align: center;
+   font-family: sans-serif;
+}
+
+ .input-row{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+ }
+  .input-row .input-group{
+    flex-basis: 45%;
+  }
+  input{
+   width: 100%;
+   border: none;
+   border-bottom: 1px solid #ccc;
+   outline: none;
+   padding-bottom: 5px;
+  }
+  textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+  }
+
+  textarea::-webkit-input-placeholder{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 3px;
+    transform: translateX(-5%);
+  }
+
+  label{
+    padding-top: 10px;
+    font-size: 18.32px;
+    margin-bottom: 6px;
+    display: block;
+    color: #ff4321;
+
+  }
+  button{
+    background: #ff4321;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+  }
+.contact-left h3{
+   color: #ff4321;
+   font-weight: 600;
+   margin-bottom: 30px;
+  }
+  /* .contact-right h3{
+
+     /* font-weight: 600;
+     margin-bottom: 30px; 
+    } */
+
+tr td:first-child{
+   padding-right: 20px;
+
+}
+tr td{
+   padding-right: 20px;
+
+}
+
+.testcase{
+  margin: 10px;
+  height: 50px;
+  width: 120px;
+}
+
+.tcsolution{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 200px;
+}
+
+.testname{
+  position: relative;
+  bottom: 50px;
+  width: 400px;
+}
+
+.subbutton{
+  position: relative;
+  left: 500px;
+}
+.arrow{
+  position: relative;
+  left: 10px;
+  bottom: 25px;
+  font-size: 20px;
+}
+h1{
+  color: #ff4321;
+}

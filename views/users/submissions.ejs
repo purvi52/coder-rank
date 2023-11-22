@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/submissions.css">
+  </head>
+  <body>
+
+    <div class="row mt-5">
+    <div class="card card-body">
+      <form action="/subPost" method="post">
+        <div class="wrapper">
+        	<div class="header">Submissions</div>
+            <div class="cards_wrap">
+            <% for(var i=0; i < result1.length; i++) { %>
+
+              <div class="card_item">
+          			<div class="card_inner">
+          				<img src="black_panther.png">
+          				<div class="role_name"><%= result1[i].out %></div>
+          				<div class="real_name"><%= result1[i].ide %></div>
+          				<div class="film"><%= result1[i].code %></div>
+                  <button type="submit" class="signin-button" value=<%= i %> name="button">Check plag</button>
+          			</div>
+          		</div>
+
+
+            <% } %>
+
+
+
+      </form>
+    </div>
+</div>
+  </body>
+</html>

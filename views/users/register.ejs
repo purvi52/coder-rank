@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <div class="login-div">
+    <h1>User Registration Form</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+      <div class="fields">
+
+      <div class="username">
+          <input type="username" class="user-input" name="name" placeholder="Enter Name" required>
+          <br> <br>
+      </div>
+      <div class="username">
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <br> <br>
+      </div>
+      <div class="username">
+        <input type="text" name="mobile" placeholder="Enter Mobile" required>
+        <br> <br>
+      </div>
+
+
+    <input type="file" name="image" required>
+    <br> <br>
+    <div class="password">
+      <input type="password" class="pass-input" name="password" placeholder="Enter Password" required>
+      <br> <br>
+    </div>
+
+    <button  class="signin-button" type="submit" name="button" value="Register">Register</button>
+    <a href="/login" class="loginA">Login</a>
+  </form>
+    </div>
+  </div>
+
+
+
+<%
+if(typeof message !== 'undefined'){%>
+
+<p style="color: green;"><%= message %></p>
+<% }
+%>
+
+<% include('../layouts/footer.ejs') %>
